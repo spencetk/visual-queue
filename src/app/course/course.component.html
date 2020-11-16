@@ -1,0 +1,27 @@
+
+<mat-card class="course-card" [style.backgroundColor]="'maroon'">
+  <mat-card-header [style.backgroundColor]="'orange'">
+    <mat-card-title>{{course.courseDept}}{{course.courseNumber}}</mat-card-title>
+    <div fxFlex></div>
+    <button mat-icon-button [matMenuTriggerFor]="menu" >
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="seeOfficeHours(course._id)">
+        <mat-icon>schedule</mat-icon>
+        <span>Office Hours Page</span>
+      </button>
+
+      <button mat-menu-item *ngIf="authService.currentUserValue.role === 'Professor'" (click)="delete(course._id)">
+        <mat-icon>delete</mat-icon>
+        <span>Delete course</span>
+      </button>
+    </mat-menu>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+
+    </p>
+  </mat-card-content>
+
+</mat-card>

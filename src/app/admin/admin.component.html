@@ -1,0 +1,14 @@
+<h1>Admin</h1>
+<p>This page can only be accessed by administrators.</p>
+<div>
+  All users using VisualQueue:
+  <ul>
+    <li *ngFor="let user of users">{{user.username}} {{user.role}}</li>
+  </ul>
+</div>
+<div>
+  All courses using VisualQueue:
+  <ul>
+    <li *ngFor="let course of courses">{{course.courseDept}} {{course.courseNumber}} created by: {{course.createdBy.username}}</li>
+  </ul>
+</div>

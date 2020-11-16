@@ -1,0 +1,16 @@
+<mat-toolbar *ngIf="isUser">
+
+
+  <mat-label *ngIf="isUser">Hi, {{this.currentUser.username}}</mat-label>
+
+  <button mat-button routerLink="/">Home</button>
+
+  <button mat-button routerLink="/admin" *ngIf="isProf" >Admin Only</button>
+
+  <button mat-button routerLink="/register-course" *ngIf="isProf">Create New Course</button>
+
+  <button mat-button routerLink="/join-course" *ngIf="!isProf">Join Course</button>
+
+  <button mat-button (click)="logout()">Logout </button>
+</mat-toolbar>
+<router-outlet></router-outlet>
