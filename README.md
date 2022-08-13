@@ -1,27 +1,14 @@
 # VisualQueue
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.
+Cloud development project was for school during Fall 2020 semester, inspired off of my own experiences being a TA for a different CS class and hosting office hours over Zoom for a high volume of students.
 
-## Development server
+Designed with Anuglar front-end, NodeJS web server, and data storage with MongoDB
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Description
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Web application made in response to the Covid-19 outbreak using Angular, Node.js, and MongoDB
+- Communicates to back-end using REST API and Node.js web server
+- Organizes classes and recognizes enrolled students, professor, and teaching assistants with MongoDB
+- Identified and addressed issue of using a spreadsheet to manually maintain students using office hours
+- Students can visually see a queue and their position in line while in a Zoom waiting room
+- TAs and professors can open/close their virtual offices, admit students, and send messages to those waiting in line.
